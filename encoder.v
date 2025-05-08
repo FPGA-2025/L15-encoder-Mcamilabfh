@@ -1,5 +1,3 @@
-`timescale 1ns/1ps
-
 module Encoder (
     input  wire clk,
     input  wire rst_n,
@@ -28,7 +26,7 @@ module Encoder (
         end else begin
             // Calcula o próximo estado (next_direcao)
             if (horario && !antihorario) begin
-=
+
                 case (direcao)
                     Q0: next_direcao = Q1;
                     Q1: next_direcao = Q2;
